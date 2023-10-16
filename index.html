@@ -1,24 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html class="h-full">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+
         <script src="https://cdn.tailwindcss.com"></script>
         <script>
         tailwind.config = {
             theme: {
-            extend: {
-                colors: {
-                clifford: '#da373d',
+                extend: {
+                    colors: {
+                        main: '#260D1C',
+                        background: '#FFF3EB',
+                        accent: "#2736B9",
+                        accentTwo: "#BC8034"
+                    }
+                },
+                fontFamily: {
+                    'dmsans': ['DM Sans', 'sans-serif']
                 }
-            }
             }
         }
         </script>
     </head>
-    <body>
-        <h1 class="text-3xl font-bold underline text-clifford">
-            Hello world!
-        </h1>
+    <body class="bg-background flex flex-col h-full">
+        <div class="flex flex-row gap-5 align-middle w-full p-5 sm:justify-normal justify-center flex-grow-0">
+            <img src="assets/tile114.png" class="w-10 h-10"/>
+            <h1 class="text-3xl font-bold text-main font-dmsans">
+                Coach Crow
+            </h1>
+            <div class="flex-grow justify-end hidden sm:flex">
+                <a class="text-dmsans text-sm underline underline-offset-4" href="https://anthonyvarkey.notion.site/Coach-Crow-Documentation-ae94b652d9f544eaa117035e9c54558c?pvs=4">
+                    Support & Privacy Policy
+                </a>
+            </div> 
+        </div>
+        <div class="flex flex-row justify-center flex-grow">
+            <div class="flex flex-col gap-5 align-middle max-w-[80%] sm:max-w-[50%] justify-center">
+                <h1 class="text-xl pt-5 sm:pt-0 sm:text-4xl font-bold text-center self-center text-main font-dmsans">
+                    Self-improvement Simplified.
+                </h1>
+                <h1 class="leading-10 text-xl sm:text-xl pb-2 sm:pb-5 font-bold text-center self-center text-main font-dmsans">
+                    Personalized 
+                    <span class="p-1 bg-accent text-background rounded-lg">Wisdom</span>
+                    and a <span class="p-1 bg-accentTwo text-background rounded-lg">Daily Goal</span> 
+                    <br>Every day.
+                </h1>
+                <a href="https://bit.ly/coachcrow" class="self-center">
+                    <img src="assets/download_btn.svg" class="w-[150px] sm:w-[200px] h-auto pb-5 sm:pb-5"/>
+                </a>
+                <img src="assets/cleanshot.png" class="w-[250px] sm:w-[300px] h-auto self-center"/>
+                <a class="text-dmsans sm:hidden self-center text-sm underline underline-offset-4" href="https://anthonyvarkey.notion.site/Coach-Crow-Documentation-ae94b652d9f544eaa117035e9c54558c?pvs=4">
+                    Support & Privacy Policy
+                </a>
+            </div>
+        </div>
     </body>
 </html>
