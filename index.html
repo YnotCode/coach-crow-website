@@ -16,7 +16,8 @@
                         main: '#260D1C',
                         background: '#FFF3EB',
                         accent: "#2736B9",
-                        accentTwo: "#BC8034"
+                        accentTwo: "#BC8034",
+                        hunter: "#3A5A40"
                     }
                 },
                 fontFamily: {
@@ -32,31 +33,80 @@
             <h1 class="text-3xl font-bold text-main font-dmsans">
                 Coach Crow
             </h1>
-            <div class="flex-grow justify-end hidden sm:flex">
-                <a class="text-dmsans text-sm underline underline-offset-4" href="https://anthonyvarkey.notion.site/Coach-Crow-Documentation-ae94b652d9f544eaa117035e9c54558c?pvs=4">
-                    Support & Privacy Policy
+            <div class="flex-grow justify-end align-middle hidden sm:flex gap-5">
+                <a href="#features" class="font-dmsans p-2 rounded-lg border-gray border-2">
+                    Features
+                </a>                
+                <!--<a href="#" class="font-dmsans p-2 rounded-lg border-gray border-2">
+                    About Us
+                </a>-->
+                <a 
+                href="https://anthonyvarkey.notion.site/Coach-Crow-Documentation-ae94b652d9f544eaa117035e9c54558c?pvs=4" 
+                class="p-2 rounded-lg font-dmsans border-gray border-2">
+                    Support
                 </a>
             </div> 
         </div>
+        <div class="sm:hidden w-full flex flex-row justify-center gap-5">
+            <a href="#features" 
+            class="font-dmsans text-sm p-2 font-bold rounded-lg border-gray border-2">
+                Features
+            </a>
+            <!--<a href="#" 
+            class="font-dmsans text-sm p-2 font-bold rounded-lg border-gray border-2">
+                About Us
+            </a>-->
+            <a 
+            href="https://anthonyvarkey.notion.site/Coach-Crow-Documentation-ae94b652d9f544eaa117035e9c54558c?pvs=4" 
+            class="font-dmsans text-sm p-2 font-bold rounded-lg border-gray border-2">
+                Support
+            </a>
+        </div>
         <div class="flex flex-row justify-center flex-grow">
             <div class="flex flex-col gap-5 align-middle max-w-[80%] sm:max-w-[50%] justify-center">
-                <h1 class="text-xl pt-5 sm:pt-0 sm:text-4xl font-bold text-center self-center text-main font-dmsans">
+                <h1 class="hidden sm:block text-xl pt-5 sm:pt-0 sm:text-4xl font-bold text-center self-center text-main font-dmsans">
                     Self-improvement Simplified.
                 </h1>
-                <h1 class="leading-10 text-xl sm:text-xl pb-2 sm:pb-5 font-bold text-center self-center text-main font-dmsans">
+                <h1 class="leading-10 text-xl sm:text-xl pb-0 pt-10 sm:pt-0 sm:pb-5 font-bold text-center self-center text-main font-dmsans">
                     Personalized 
                     <span class="p-1 bg-accent text-background rounded-lg">Wisdom</span>
                     and a <br class="sm:hidden"><span class="p-1 bg-accentTwo text-background rounded-lg">Daily Goal</span> 
                     <br>Every day.
                 </h1>
                 <a href="https://bit.ly/coachcrow" class="self-center">
-                    <img src="assets/download_btn.svg" class="w-[150px] sm:w-[200px] h-auto pb-5 sm:pb-5"/>
+                    <img src="assets/download_btn.svg" class="w-[150px] sm:w-[200px] h-auto pb-2 sm:pb-5"/>
                 </a>
                 <img src="assets/cleanshot.png" class="w-[250px] sm:w-[300px] h-auto self-center"/>
-                <a class="text-dmsans sm:hidden self-center text-sm underline underline-offset-4" href="https://anthonyvarkey.notion.site/Coach-Crow-Documentation-ae94b652d9f544eaa117035e9c54558c?pvs=4">
-                    Support & Privacy Policy
-                </a>
             </div>
         </div>
+        <div id="features" class="flex flex-row justify-center gap-5 align-middle w-full p-5">
+            <h1 class="font-bold text-4xl text-main font-dmsans decoration-wavy underline underline-offset-4 decoration-accent"> Features </h1>
+        </div>
+        <div class="flex self-center flex-row gap-5 justify-center align-middle w-full p-5  flex-wrap sm:max-w-[60%]">
+            <div class="flex flex-grow flex-row align-middle justify-center p-5 rounded-lg bg-accent">
+                <h1 class="font-dmsans text-center  text-2xl font-bold text-white">Knows over <br><span class="text-4xl">250,000</span> <br>quotes</h1>
+            </div>
+            
+            <div class="flex flex-grow border-gray border-4 flex-row align-middle justify-center p-5 rounded-lg min-w-[50%]">
+                <h1 class="font-dmsans text-center text-2xl font-bold text-main">Build<br>
+                    <span class="text-4xl">Streaks 🔥</span> <br>to track progress</h1>
+            </div>
+            <div class="flex flex-grow border-gray border-4 flex-row align-middle justify-center p-5 rounded-lg min-w-[50%]">
+                <h1 class="font-dmsans text-center text-2xl font-bold text-main">See<br>
+                    <span class="text-4xl">History 📖</span> <br>over time</h1>
+            </div>
+            <div class="flex flex-grow flex-row align-middle justify-center p-5 rounded-lg bg-accentTwo">
+                <h1 class="font-dmsans text-center text-2xl font-bold text-white">Realistic,<br><span class="text-4xl">Achieveable</span> <br>goals</h1>
+            </div>
+            <div class="flex flex-grow flex-row align-middle justify-center bg-black p-5 rounded-lg min-w-[50%]">
+                <h1 class="font-dmsans text-center text-2xl text-white font-bold text-main">There's<br>
+                    <span class="text-4xl">Dark Mode</span> <br>too</h1>
+            </div>
+            <div class="flex flex-grow border-gray border-4 flex-row align-middle justify-center p-5 rounded-lg ">
+                <h1 class="font-dmsans text-black text-center text-2xl font-bold text-main">Don't worry,<br>
+                    <span class="text-4xl">No Paywalls 🆓</span> <br>for any features</h1>
+            </div>
+        </div>
+
     </body>
 </html>
