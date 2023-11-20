@@ -28,14 +28,88 @@
         }
         </script>
         <style>
+            @keyframes swirl{
+                to{
+                    transform: rotate(360deg);
+                }
+            }
+
+            .rainbow-box:before {
+                content: "";
+                z-index: -1;
+                background-origin: border-box;
+                background-clip: content-box, border-box;
+                background:  linear-gradient(black, black), 
+                    linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+                transform: rotate(30deg);
+            }
+
             .rainbow-box {
                 background-color: #302244;
-                border: 5px solid transparent;
-                border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+                border-radius: 20px;
+                border: 1px solid transparent;
+                /*border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);*/
+                background-image: linear-gradient(black, black), 
+                    linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+                background-origin: border-box;
+                background-clip: content-box, border-box;
                 border-image-slice: 1;
-                height: 200px;
-                width: 200px;
+                animation: swirl 0.3s ease-in infinite;
             }
+            @keyframes expand {
+                to {
+                    transform: scale(125%)
+                }
+            }
+
+            .rainbow:hover{
+                animation: expand 0.2s;
+                animation-fill-mode: forwards;
+            }
+
+        .rainbow {
+            position: relative;
+            margin: auto;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+        .rainbow:before {
+        content: "";
+        position: absolute;
+        left: -10rem;
+        right: -10rem;
+        top: -10rem;
+        bottom: -10rem;
+        margin: auto;
+        background: conic-gradient(
+            #fd004c,
+            #fe9000,
+            #fff020,
+            #3edf4b,
+            #3363ff,
+            #b102b7,
+            #fd004c
+        );
+        z-index: -2;
+        pointer-events: none;
+        transition: 3s ease;
+        animation: swirl 2s infinite linear;
+        }
+        rainbow:hover:before {
+            animation: swirl 0.2s infinite alternate;
+        }
+        .rainbow:after {
+        content: "";
+        position: absolute;
+        left: 0.5rem;
+        top: 0.5rem;
+        right: 0.5rem;
+        bottom: 0.5rem;
+        background: black;
+        border-radius: 6px;
+        z-index: -2;
+        pointer-events: none;
+        }
         </style>
         <meta name="description" content="Simplify self-improvement with daily wisdom and achievable goals from Coach Crow! AI-powered advice available now on iOS.">
         <meta name="keywords" content="Coach Crow, Coach, Crow, Advice, Self-improvement, Quotes, Goals">
@@ -88,9 +162,9 @@
                 </h1>
                 <a href="https://bit.ly/coachcrow" class="self-center">
                     <!--<img src="assets/download_btn.svg" class="w-[150px] sm:w-[200px] h-auto pb-2 sm:pb-5"/>-->
-                    <h1 class="rainbow-box rounded-lg p-2 bg-black text-3xl text-center font-dmsans font-bold text-background h-auto">
-                        Join the Beta
-                    </h1>
+                    <button class="rainbow p-3 rounded-xl text-3xl text-center  font-dmsans font-bold text-background h-auto">
+                        <h1 class="pt-2 pb-2 pr-4 pl-4">Join the Beta</h1>
+                    </button>
                 </a>
                 <img src="assets/cleanshot.png" class="w-[250px] sm:w-[300px] h-auto self-center"/>
             </div>
